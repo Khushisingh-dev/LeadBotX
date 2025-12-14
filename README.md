@@ -79,7 +79,4 @@ The goal of this project is to **visually and logically represent** how an AI-ba
 > Note: This repository focuses on the **frontend and workflow representation**.  
 > Backend automation (n8n, OpenAI API, Notion API) is represented conceptually.
 
----
-
-## 📂 Folder Structure
 
