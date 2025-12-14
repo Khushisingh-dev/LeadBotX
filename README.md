@@ -81,5 +81,3 @@ The goal of this project is to **visually and logically represent** how an AI-ba
 
 ---
 
-## 📂 Folder Structure
-

@@ -127,7 +127,7 @@ function App() {
             to a list of qualified leads.
           </p>
           <div className="proto-box">
-            <img src="/assets/workflow.avif" alt="Workflow" data-aos="zoom-in" />
+            <img src="/assets/Workflow.jpeg" alt="Workflow" data-aos="zoom-in" />
           </div>
         </div>
       </section>
