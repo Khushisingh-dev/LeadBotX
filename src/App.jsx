@@ -120,7 +120,7 @@ function App() {
       </section>
 
       {/* PROTOTYPE */}
-      <section id="prototype">
+      {/* <section id="prototype">
         <div className="section-inner">
           <h1 data-aos="fade-up">See LeadBotX in Action</h1>
           <p data-aos="fade-up" data-aos-delay="120" className="subtitle">
@@ -128,10 +128,38 @@ function App() {
             to a list of qualified leads.
           </p>
           <div className="proto-box">
-            <img src="/assets/workflow.avif" alt="Workflow" data-aos="zoom-in" />
+            <img src="/assets/workflow.avif" alt="workflow" data-aos="zoom-in" />
           </div>
         </div>
-      </section>
+      </section> */}
+
+      {/* PROTOTYPE */}
+<section id="prototype">
+  <div className="section-inner">
+    <h1 data-aos="fade-up">See LeadBotX in Action</h1>
+
+    <p
+      data-aos="fade-up"
+      data-aos-delay="120"
+      className="subtitle"
+    >
+      Watch a 2-minute demo to see how you can go from a simple description
+      to a list of qualified leads.
+    </p>
+
+    <div className="proto-box" data-aos="zoom-in">
+      <video
+        className="proto-video"
+        src="/assets/demo.mp4"
+        controls
+        muted
+        playsInline
+        preload="metadata"
+      />
+    </div>
+  </div>
+</section>
+
 
       {/* FEATURES */}
       <section id="features">
