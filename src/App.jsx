@@ -4,7 +4,8 @@ import "aos/dist/aos.css";
 import "./App.css";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import {
-  FileText, Sparkles, Filter, Bell, MoveRight, Brain, Database, BarChart3, Users, Rocket, Megaphone, Building2, Briefcase, Mail, TrendingUp, Code2, Flame
+  FileText, Sparkles, Filter, Bell, MoveRight, Brain, Database, BarChart3, Users, Rocket, Megaphone, Building2, Briefcase, Mail, TrendingUp, Code2, Flame,
+  Video
 } from "lucide-react";
 
 function App() {
@@ -49,16 +50,16 @@ function App() {
               Team
             </a>
           </li>
-          <li>
-            <a href="#contact" onClick={() => setMenuOpen(false)}>
-              Contact
-            </a>
-          </li>
         </ul>
       </nav>
 
+
       {/* HERO */}
       <section id="hero" className="hero">
+
+         {/* MOBILE BACKGROUND OVERLAY */}
+  <div className="mobile-bg-overlay" aria-hidden="true"></div>
+
         <div className="hero-glow"></div>
         <div className="hero-content">
           <h1 data-aos="fade-up" data-aos-delay="0">
@@ -69,10 +70,10 @@ function App() {
             prospects, saving your time and boosting your sales pipelines.
           </p>
           <div className="hero-buttons" data-aos="fade-up" data-aos-delay="240">
-            <button className="primary">
-              Try Demo <MoveRight />
+            <a href="#prototype"> <button className="primary" >
+              <Video />  Watch Workflow Video
             </button>
-            <button className="secondary">Watch Workflow Video</button>
+            </a>
           </div>
         </div>
       </section>
@@ -127,7 +128,7 @@ function App() {
             to a list of qualified leads.
           </p>
           <div className="proto-box">
-            <img src="/assets/Workflow.jpeg" alt="Workflow" data-aos="zoom-in" />
+            <img src="/assets/workflow.avif" alt="Workflow" data-aos="zoom-in" />
           </div>
         </div>
       </section>
@@ -266,6 +267,9 @@ function App() {
           <p data-aos="fade-up" data-aos-delay="120" className="subtitle">
             How LeadBotX transformed raw data into high-intent sales opportunities.
           </p>
+          <div className="casestudy-box">
+            <img src="/assets/workflow.jpg" alt="Workflow" data-aos="zoom-in" />
+          </div>
           <div className="casestudy-grid">
             <div className="case-card" data-aos="zoom-in">
               <div className="case-icon">
@@ -273,9 +277,7 @@ function App() {
               </div>
               <h3>Data Collection</h3>
               <p>
-                Using Instagram and Google Search APIs, our AI agent scanned public
-                profiles, business listings, and online signals to collect over
-                <strong> 230+ raw leads </strong> relevant to the target industry.
+                Collects raw leads from Social Media APIs, Google APIs, and web scrapping.
               </p>
             </div>
             <div className="case-card" data-aos="zoom-in">
@@ -284,9 +286,7 @@ function App() {
               </div>
               <h3>Data Cleaning & Enrichment</h3>
               <p>
-                The system automatically removed duplicate entries, validated contact
-                details, enriched company information, and standardized data formats
-                to ensure accuracy and usability.
+                Removes duplicates, validates emails/contacts, and formats data properly.
               </p>
             </div>
             <div className="case-card" data-aos="zoom-in">
@@ -295,10 +295,7 @@ function App() {
               </div>
               <h3>Lead Categorization</h3>
               <p>
-                Leads were intelligently categorized into
-                <strong> Hot, Warm, and Cold </strong>
-                segments based on engagement signals, relevance, and conversion
-                potential—enabling faster and smarter outreach.
+                Uses AI to analyze leads, assign quality (Hot, Warm, Cold), and categorize by industry.
               </p>
             </div>
           </div>
@@ -415,9 +412,7 @@ function App() {
       </section>
 
       {/* FOOTER */}
-      <footer id="contact" className="footer" data-aos="fade-up">
-        <h3>Contact Us</h3>
-        <p>Email: LeadBotX@gmail.com</p>
+      <footer className="footer" data-aos="fade-up">
         <p>© 2025 LeadBotX. All rights reserved.</p>
       </footer>
     </>
