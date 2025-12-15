@@ -712,7 +712,11 @@ section {
     pointer-events: auto;
   }
 
-  /* HERO */
+  /* 🔥 HERO (IMPORTANT PART) */
+  .hero {
+    min-height: 82vh;        /* pehle 100vh tha */
+    padding: 60px 0 40px;   /* top thoda kam */
+  }
 
   .hero-content h1 {
     font-size: 40px;
@@ -766,14 +770,17 @@ section {
 @media (max-width: 480px) {
 
   section {
-    padding: 75px 0;
+    padding: 65px 0;
   }
 
   .section-inner {
     width: 94%;
   }
 
-  /* HERO */
+  .hero {
+    min-height: 65vh;        
+    padding: 50px 0 30px;
+  }
 
   .hero-content h1 {
     font-size: 30px;
