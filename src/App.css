@@ -283,7 +283,7 @@ section {
 .proto-video {
   width: 100%;
   max-height: 400px;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   border-radius: 16px;
 }
@@ -752,7 +752,7 @@ section {
   .gs-card {
     width: 100%;
     height: auto;
-  }
+  } 
 
   /* FEATURES */
   .feature-grid {
