@@ -373,7 +373,7 @@ function App() {
             {/* MEMBER 1 */}
             <div className="team-card" data-aos="flip-left">
               <img
-                src="/assets/ekagra.jpg"
+                src="/assets/pfp.png"
                 alt="Ekagra"
               />
               <h3>Ekagra</h3>
@@ -398,7 +398,7 @@ function App() {
             {/* MEMBER 2 */}
             <div className="team-card" data-aos="flip-right">
               <img
-                src="/assets/khushi.jpg"
+                src="/assets/pfp.png"
                 alt="Khushi Singh"
               />
               <h3>Khushi Singh</h3>
